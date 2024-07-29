@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empathic Voice Interface</title>
-  </head>
-  <body>
-    <div id="app">
-      <div id="btn-container">
-        <button id="start-btn">Start</button>
-        <button id="stop-btn" disabled="true">Stop</button>
-      </div>
-      <div id="heading-container">
-        <h2>Empathic Voice Interface (EVI)</h2>
-        <p>
-          Welcome to our TypeScript sample implementation of the Empathic Voice Interface!
-          Click the "Start" button and begin talking to interact with EVI.
-        </p>
-      </div>
-      <div id="chat"></div>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start and Stop</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      color: #fff;
+    }
+    .container {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://cdn.dribbble.com/users/957392/screenshots/2771607/media/dfc38902bf17afc0ff90fe25da70f2ca.gif" alt="Start/Stop Button">
+  </div>
+</body>
 </html>
