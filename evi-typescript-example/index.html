@@ -3,30 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Start and Stop</title>
+  <title>Hume EVI Example</title>
+  <link rel="stylesheet" href="/src/styles.css">
   <style>
     body {
       margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #000;
+      background-color: #121212;
       color: #fff;
     }
-    .container {
-      text-align: center;
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #chat {
+      width: 80%;
+      max-width: 600px;
+      height: 50vh;
+      overflow-y: auto;
+      background: #1e1e1e;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    button#toggle-btn {
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
     }
     img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
+      width: 100px;
+      height: 100px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://cdn.dribbble.com/users/957392/screenshots/2771607/media/dfc38902bf17afc0ff90fe25da70f2ca.gif" alt="Start/Stop Button">
+  <div id="container">
+    <button id="toggle-btn">
+      <img src="https://cdn.dribbble.com/users/61921/screenshots/3885298/media/510c82532e7c5c20c382f03bfcdc7c9d.gif" alt="Toggle Button">
+    </button>
+    <div id="chat"></div>
   </div>
+  <script type="module" src="/src/index.ts"></script>
 </body>
 </html>
